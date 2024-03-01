@@ -1,0 +1,216 @@
+
+html{
+    height: 100%;
+}
+body{
+    background-color: aquamarine;
+    
+}
+
+main{
+    width: 80%;
+    display: inline-block;
+}
+
+.main{
+    background-color: white;
+    display: block;
+    min-height: 100vh;
+}
+
+.main p{
+    font-weight: bolder;
+
+}
+
+.logoAlura{
+    padding-left: 10px;
+    position: absolute;
+    padding-top: 50px;
+}
+.area{
+    border: none;
+    background-color: white;
+    cursor:none;
+    min-width: 90% ;
+    margin-left: 4.5%;
+    margin-top: 120px;
+    min-height: 50vh;
+    cursor: text;
+    resize: none;
+    font-size: 40px;
+}
+
+.area::placeholder{
+    font-size: 40px;
+    text-align: left;
+}
+
+.area:focus{
+    border:0;
+    outline: none;
+    
+}
+
+main p{
+     padding-left: 60px;
+     color:black;
+     font-weight: bolder;
+     font-size: 15px;
+}
+
+
+.botonEnDes{
+
+    background-color: white;
+    border: 3px solid blueviolet;
+    border-radius: 40px;
+    padding: 15px 15px;
+    min-width: 20%;
+    transition: 400ms;
+    
+}
+
+.botonEnDes:first-child{
+    background-color: #9D51DB;
+}
+
+.botonEnDes:first-child:hover{
+    background-color: white;
+}
+
+.botonEnDes:last-child:hover{
+    background-color: #9D51DB;
+}
+.submit{
+    text-align: center;
+    
+}
+
+
+aside{
+    background-color: aliceblue;
+    float: right;
+    width: 20%;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.campoTexto{
+    display: block;
+    margin: 10px;
+    padding: 10px 10px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    background-color: white;
+    height: calc(100vh - 60px);
+    box-shadow: 1px 1px 40px black;
+}
+
+.mensaje{
+    border: none;
+    background-color: white;
+    cursor:none;
+    min-width: 100%;
+    min-height: 66%;
+    border-radius: 20px;
+    cursor: text;
+    resize: none;
+    font-size: 20px
+}
+
+  .mensaje:focus{
+    border:0;
+    outline: none;
+    font-size: small;
+    font-size: 20px;
+  }
+
+::placeholder{
+    color: grey;
+    font-size: 10px;
+    display: flex;
+    text-align: center;
+    
+}
+
+
+.imagenMuneco{
+    margin: 20px;
+    padding-top: 50%;
+    text-align: center;
+    max-height: 200px;
+    max-width: 100%;   
+}
+
+h2{
+    font-weight: bolder;
+    text-shadow: 1px 4px 30px black;
+    text-align: center;
+    max-width: 100%; 
+}
+
+.campoTexto p{
+    padding-top: 20px;
+    color: grey;
+    text-shadow: 1px 4px 30px grey;
+    max-width: 100%; 
+}
+
+.copiarTexto{
+    float: inline-end;
+    background-color: white;
+    border: 3px solid blueviolet;
+    border-radius: 40px;
+    padding: 15px 15px;
+    min-width: 100%;
+    transition: 400ms;
+    margin-top: 40px;
+    
+}
+
+.copiarTexto:hover{
+    background-color: #9D51DB;
+    border: #9D51DB;
+    color: aliceblue;
+    box-shadow: 5px 5px 30px 10px #000000;
+}
+
+/* Clases para JS*/
+
+.letra-roja {
+    color: red;
+}
+
+.letra-azul {
+    color: blue;
+}
+
+/* Estilo para el contenedor de la alerta */
+.alert {
+    display: none; /* Por defecto oculto */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f44336; /* Color rojo */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.alert2 {
+    display: none; /* Por defecto oculto */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #36f456; /* Color verde */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/imagenes/2572673.png" alt="Icono del contacto">
+    <title>Encriptador/Desencriptador</title>
+</head>
+<body onload="cambiarColor();">
+
+    <div id="alert" class="alert">
+        Error de Digitación: Por favor, verifica que tu entrada sea válida
+    </div>
+
+    <div id="alert2" class="alert2">
+        ¡Texto copiado efectivamente!
+    </div>
+    <main>
+        <div class = "main">
+            <h1>
+                <img src="/imagenes/Logo.png" alt="Logo de Alura" class="logoAlura">
+            </h1>
+
+            <textarea class="area" cols="20" rows="10" placeholder="Ingrese el texto a Encriptar o Desencriptar" id="areaTexto"></textarea>
+
+            <p >&#8859 Solo letras minúsculas y sin acentos</p>
+            <div class="submit">
+                
+                <button class="botonEnDes" id="encriptar">
+                    Encriptar
+                </button>
+                <button class="botonEnDes" id="desencriptar">
+                    Desencriptar
+                </button>
+            </div>
+        </div>
+    </main>
+    <aside>
+        <div class = "campoTexto">
+            <textarea class="mensaje" id="area1" cols="20" rows="10" readonly hidden></textarea>
+            <img src="/imagenes/Muñeco.png" alt="Muñeco con una lupa" class="imagenMuneco" id="imagenMuneco"> 
+            <h2 id="textAside">Ningún mensaje fué encontrado</h2>
+            <p id="pAside">Ingresa el texto que quieras encriptar o desencriptar</p>
+            <button class="copiarTexto"  id="copyButton" hidden onclick="copiarTexto();">
+                Copiar Texto
+            </button>
+        </div>
+    </aside>
+
+    <script src="/app.js" defer></script>
+</body>
+</html>
