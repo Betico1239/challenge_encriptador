@@ -46,7 +46,7 @@ document.getElementById("encriptar").addEventListener(
   function devolverEncriptado(letra){
     let vocales =['a','e','i','o','u'];
     let vowelsEncriptadas = ['ai','enter','imes','ober','ufat'];
-    let permitidas = ['q','w','r','t','y','p','s','d','f','g','h','j','k','l','z','x','c','v','b','n','m', ' ', '!','¡', '¿', '?'];
+    let permitidas = ['q','w','r','t','y','p','s','d','f','g','h','j','k','l','z','x','c','v','b','n','m', ' ', '!','¡', '¿', '?', 'a','e','i','o','u'];
 
     
     for (let i = 0; i < permitidas.length; i++) {
@@ -139,7 +139,7 @@ document.getElementById("desencriptar").addEventListener(
 function desencriptarTexto(texto){
   let vocales =['a','e','i','o','u'];
   let vowelsEncriptadas = ['ai','enter','imes','ober','ufat'];
-  let permitidas = ['q','w','r','t','y','p','s','d','f','g','h','j','k','l','z','x','c','v','b','n','m', ' ', '!','¡', '¿', '?'];
+  let permitidas = ['q','w','r','t','y','p','s','d','f','g','h','j','k','l','z','x','c','v','b','n','m', ' ', '!','¡', '¿', '?' ,'a','e','i','o','u'];
   let caractersNoPermitidosEncontrados = false;
 
   //console.log(texto); //hoberlai aienter
